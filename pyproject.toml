@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "d120-wagtail"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "d120_wagtail"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+wagtail = "^4.1.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+pylint = "^2.15.5"
+pylint-django = "^2.5.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
